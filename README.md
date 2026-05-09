@@ -74,3 +74,46 @@ cs439_credit_default_project/
 ├── PROJECT_BRIEF.md
 ├── requirements.txt
 └── README.md
+```
+
+## Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # macOS/Linux
+# .venv\Scripts\activate   # Windows
+
+pip install -r requirements.txt
+```
+
+## Run the Full Experiment
+
+```bash
+python -m src.train
+```
+
+After running the experiment, the pipeline will generate output files locally, including:
+
+```text
+results/metrics.csv
+results/thresholds.csv
+figures/roc_curve.png
+figures/pr_curve.png
+figures/confusion_matrix.png
+figures/calibration_curve.png
+figures/permutation_importance.png
+```
+
+These generated files are not committed to the repository because they can be reproduced by running the training pipeline.
+
+## Final Report
+
+The final report is submitted separately. This repository contains the reproducible code, preprocessing scripts, notebooks, and model training pipeline used to generate the experimental results.
+
+## Reproducibility Notes
+
+- Random seed is fixed at `42`.
+- The test set is held out until final evaluation.
+- Scaling and one-hot encoding are fitted only on the training split through an sklearn `Pipeline` and `ColumnTransformer`.
+- Threshold tuning is performed on a validation split, not on the test set.
+- The raw dataset is downloaded from the official UCI source instead of being manually edited.
