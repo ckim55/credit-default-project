@@ -6,8 +6,8 @@ Beyond Accuracy: Explainable and Calibrated Credit Card Default Risk Prediction
 ## Main Idea
 This project predicts whether a credit card customer will default next month. Instead of only training one classifier, the project builds a full data science pipeline with preprocessing, feature engineering, baseline comparison, validation-based threshold tuning, calibration analysis, and model explainability.
 
-## Why This Is Strong for CS439
-The assignment asks for a research-driven data science problem, careful preprocessing, technical methodology, experiments, visualizations, and a reproducible GitHub repository. This project naturally covers all of those parts.
+## Project Scope and Relevance
+This project is designed as a complete data science workflow that includes problem formulation, data preprocessing, feature engineering, model comparison, threshold tuning, evaluation, visualization, and reproducibility. The goal is to evaluate credit default prediction not only through accuracy, but also through recall, precision, calibration, and interpretability.
 
 ## Research Question
 Can feature engineering, class-imbalance-aware training, threshold tuning, and explainability improve both predictive performance and interpretability in credit card default risk prediction?
@@ -50,7 +50,3 @@ UCI Default of Credit Card Clients dataset.
 
 ## Main Claim for the Final Paper
 A strong model for default prediction should not be judged only by accuracy. For financial risk prediction, threshold choice, recall, precision, calibration, and interpretability are also important because different types of errors have different practical costs.
-
-## Project Scope and Relevance
-
-This project is designed as a complete data science workflow that includes problem formulation, data preprocessing, feature engineering, model comparison, threshold tuning, evaluation, visualization, and reproducibility. The goal is to evaluate credit default prediction not only through accuracy, but also through recall, precision, calibration, and interpretability.
