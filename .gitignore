@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+data/raw/*.csv
+data/processed/*.csv
+results/
+figures/EOF
+cat > .gitignore <<'EOF'
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+data/raw/*.csv
+data/processed/*.csv
+results/
+figures/
