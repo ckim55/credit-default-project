@@ -50,3 +50,7 @@ UCI Default of Credit Card Clients dataset.
 
 ## Main Claim for the Final Paper
 A strong model for default prediction should not be judged only by accuracy. For financial risk prediction, threshold choice, recall, precision, calibration, and interpretability are also important because different types of errors have different practical costs.
+
+## Project Scope and Relevance
+
+This project is designed as a complete data science workflow that includes problem formulation, data preprocessing, feature engineering, model comparison, threshold tuning, evaluation, visualization, and reproducibility. The goal is to evaluate credit default prediction not only through accuracy, but also through recall, precision, calibration, and interpretability.
