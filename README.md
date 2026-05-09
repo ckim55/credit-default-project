@@ -60,14 +60,9 @@ cs439_credit_default_project/
 ├── data/
 │   ├── raw/
 │   └── processed/
-├── figures/
 ├── notebooks/
 │   ├── 01_eda.ipynb
 │   └── 02_modeling_results.ipynb
-├── report/
-│   ├── main.tex
-│   └── references.bib
-├── results/
 ├── src/
 │   ├── data.py
 │   ├── features.py
@@ -76,50 +71,6 @@ cs439_credit_default_project/
 │   ├── plots.py
 │   ├── explain.py
 │   └── train.py
+├── PROJECT_BRIEF.md
 ├── requirements.txt
 └── README.md
-```
-
-## Setup
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-# .venv\Scripts\activate   # Windows
-
-pip install -r requirements.txt
-```
-
-## Run the Full Experiment
-
-```bash
-python -m src.train
-```
-
-After running, check:
-
-- `results/metrics.csv`
-- `results/thresholds.csv`
-- `figures/roc_curve.png`
-- `figures/pr_curve.png`
-- `figures/confusion_matrix.png`
-- `figures/calibration_curve.png`
-- `figures/permutation_importance.png`
-
-## Report
-
-The starter report is in:
-
-```text
-report/main.tex
-```
-
-It is written in a NeurIPS-style academic-paper structure. Replace the placeholder result numbers after you run the code.
-
-## Reproducibility Notes
-
-- Random seed is fixed at `42`.
-- The test set is held out until final evaluation.
-- Scaling and one-hot encoding are fitted only on the training split through an sklearn `Pipeline` and `ColumnTransformer`.
-- Threshold tuning is performed on a validation split, not on the test set.
-- The raw dataset is downloaded from the official UCI source instead of being manually edited.
