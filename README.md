@@ -51,7 +51,7 @@ The data is downloaded automatically with `ucimlrepo`, so the raw dataset is not
    - Confusion matrix
    - Calibration curve
    - Permutation feature importance
-8. Optional explainability analysis using SHAP.
+8. Interpret model behavior using permutation feature importance, with optional SHAP support.
 
 ## Repository Structure
 
@@ -114,6 +114,6 @@ The final report is submitted separately. This repository contains the reproduci
 
 - Random seed is fixed at `42`.
 - The test set is held out until final evaluation.
-- Scaling and one-hot encoding are fitted only on the training split through an sklearn `Pipeline` and `ColumnTransformer`.
+- Scaling and one-hot encoding are fitted only on the training split through a scikit-learn `Pipeline` and `ColumnTransformer`.
 - Threshold tuning is performed on a validation split, not on the test set.
 - The raw dataset is downloaded from the official UCI source instead of being manually edited.
